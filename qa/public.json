@@ -1,0 +1,63 @@
+{
+  "url": "https://zzhuangxd.github.io/round-beijing-studio-demo/",
+  "checkedAt": "2026-10-30T06:50:46.378Z",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 999,
+      "scrollWidth": 1407
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "scrollWidth": 320
+    }
+  ],
+  "checks": [
+    {
+      "hoverPreview": true
+    },
+    {
+      "menuOpen": true,
+      "focusTrap": true
+    },
+    {
+      "route": "#work",
+      "width": 390,
+      "cards": 17,
+      "overflow": false,
+      "menuClosed": true
+    },
+    {
+      "route": "#work",
+      "width": 320,
+      "cards": 17,
+      "overflow": false,
+      "menuClosed": true
+    },
+    {
+      "lightboxOpen": true,
+      "nextCount": "2 / 19"
+    },
+    {
+      "search": "7 篇匹配笔记",
+      "visibleNotes": 7
+    },
+    {
+      "contact": "https://www.xiaohongshu.com/user/profile/68cabb810000000021019811",
+      "target": "_blank",
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "resources": {
+    "failedImages": [],
+    "fontsLoaded": "loaded",
+    "resources": []
+  }
+}

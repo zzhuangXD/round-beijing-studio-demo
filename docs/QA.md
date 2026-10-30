@@ -23,4 +23,14 @@ The source snapshot was collected on 2026-10-27. It has static images, including
 
 ## Deployment
 
-Public GitHub Pages verification is recorded after publication. Only the new repository is changed; the original ROUND demo remains untouched.
+Published and browser-verified on 2026-10-30:
+
+- Demo: https://zzhuangxd.github.io/round-beijing-studio-demo/
+- Repository: https://github.com/zzhuangXD/round-beijing-studio-demo
+- GitHub Pages source: `gh-pages`, `/`; build status `built`, no build error.
+- Deployed static commit: `5803a3cf389aaca3abd694a928f4139b32a7fd6a`.
+- Public-site ego lite receipt: [qa/public.json](../qa/public.json).
+- Live checks repeated at actual widths 1440, 390 and 320: cursor preview, menu open/close and focus containment, all 17 activity cards, photo viewer next action, notes search and verified contact link. No captured runtime errors, failed image loads or failed resource responses. Fonts loaded successfully; no horizontal overflow.
+- Local visual evidence is retained in `.impeccable/review/`, including `live-desktop.png`, `live-mobile.png` and `live-user-320.png`. Screenshot binaries are intentionally excluded from the source repository.
+
+Only the new repository is changed; the original ROUND demo remains untouched.
