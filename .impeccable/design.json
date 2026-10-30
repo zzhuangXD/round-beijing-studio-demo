@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T06:39:10.038089+00:00",
+  "title": "Design System: ROUND-Beijing",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "displayName": "Charcoal Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.002 270)",
+          "oklch(27% 0.004 270)",
+          "oklch(39% 0.0064 270)",
+          "oklch(51% 0.008 270)",
+          "oklch(63% 0.0072 270)",
+          "oklch(75% 0.0052 270)",
+          "oklch(87% 0.0028 270)",
+          "oklch(95% 0.001 270)"
+        ]
+      },
+      "paper": {
+        "displayName": "White Paper",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0 0)",
+          "oklch(27% 0.0 0)",
+          "oklch(39% 0.0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0.0 0)",
+          "oklch(75% 0.0 0)",
+          "oklch(87% 0.0 0)",
+          "oklch(95% 0.0 0)"
+        ]
+      },
+      "blue": {
+        "displayName": "Action Blue",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.05 272)",
+          "oklch(27% 0.1 272)",
+          "oklch(39% 0.16 272)",
+          "oklch(51% 0.2 272)",
+          "oklch(63% 0.18 272)",
+          "oklch(75% 0.13 272)",
+          "oklch(87% 0.07 272)",
+          "oklch(95% 0.024 272)"
+        ]
+      },
+      "blue-hover": {
+        "displayName": "Deep Action Blue",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.045 272)",
+          "oklch(27% 0.09 272)",
+          "oklch(39% 0.144 272)",
+          "oklch(51% 0.18 272)",
+          "oklch(63% 0.162 272)",
+          "oklch(75% 0.117 272)",
+          "oklch(87% 0.063 272)",
+          "oklch(95% 0.0216 272)"
+        ]
+      },
+      "muted": {
+        "displayName": "Quiet Grey",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.002 270)",
+          "oklch(27% 0.004 270)",
+          "oklch(39% 0.0064 270)",
+          "oklch(51% 0.008 270)",
+          "oklch(63% 0.0072 270)",
+          "oklch(75% 0.0052 270)",
+          "oklch(87% 0.0028 270)",
+          "oklch(95% 0.001 270)"
+        ]
+      },
+      "line": {
+        "displayName": "Hairline Grey",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.001 270)",
+          "oklch(27% 0.002 270)",
+          "oklch(39% 0.0032 270)",
+          "oklch(51% 0.004 270)",
+          "oklch(63% 0.0036 270)",
+          "oklch(75% 0.0026 270)",
+          "oklch(87% 0.0014 270)",
+          "oklch(95% 0.0005 270)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Moving wordmark",
+        "purpose": "Large Latin studio identity inside the photographic hero."
+      },
+      "headline": {
+        "displayName": "Page headline",
+        "purpose": "Spacious page-level introduction."
+      },
+      "work-title": {
+        "displayName": "Activity row title",
+        "purpose": "Desktop text-led activity list."
+      },
+      "title": {
+        "displayName": "Card title",
+        "purpose": "Titles beneath activity covers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading and interface text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Controls and supporting information."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-elastic",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Shared easing for circular fills, transforms, menu and route transitions."
+      },
+      {
+        "name": "fill-rise",
+        "value": "650ms",
+        "purpose": "Circular and pill hover fills."
+      },
+      {
+        "name": "magnetic-return",
+        "value": "600ms",
+        "purpose": "Pointer-responsive control movement."
+      },
+      {
+        "name": "menu-slide",
+        "value": "850ms",
+        "purpose": "Dark panel and curved edge."
+      },
+      {
+        "name": "route-enter",
+        "value": "550ms",
+        "purpose": "Charcoal route cover."
+      },
+      {
+        "name": "route-exit",
+        "value": "800ms",
+        "purpose": "Curved route reveal."
+      },
+      {
+        "name": "meridian-turn",
+        "value": "5s linear infinite",
+        "purpose": "Globe longitude turns while the outline remains stable."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-phone-max",
+        "value": "360px"
+      },
+      {
+        "name": "phone-max",
+        "value": "760px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1100px"
+      },
+      {
+        "name": "wide-desktop-min",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Charcoal circular action",
+      "kind": "button",
+      "refersTo": "button-round",
+      "description": "A large circular invitation with a rising blue fill.",
+      "html": "<button class=\"ds-round\"><span>关于我们<br><small>About ROUND</small></span></button>",
+      "css": ".ds-round{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;width:175px;height:175px;border:0;border-radius:50%;background:var(--ink,#1c1d20);color:var(--paper,#fff);display:inline-flex;align-items:center;justify-content:center;text-align:center;font-size:16px;line-height:1.55;position:relative;isolation:isolate;overflow:hidden;cursor:pointer}.ds-round::before{content:\"\";position:absolute;left:-5%;bottom:-110%;width:110%;height:110%;border-radius:50%;background:var(--blue,#455ce9);z-index:-1;transition:bottom .65s var(--ease,cubic-bezier(.22,1,.36,1)),border-radius .65s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-round:hover::before{bottom:-5%;border-radius:30% 30% 0 0}.ds-round:focus-visible{outline:2px solid var(--blue,#455ce9);outline-offset:7px}.ds-round small{font-size:12px}@media(prefers-reduced-motion:reduce){.ds-round::before{transition:none}}"
+    },
+    {
+      "name": "Blue circular action",
+      "kind": "button",
+      "refersTo": "button-round-blue",
+      "description": "The contact invitation, with a deeper hover fill.",
+      "html": "<button class=\"ds-round ds-blue\"><span>来坐坐<br><small>Get in touch</small></span></button>",
+      "css": ".ds-round{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;width:175px;height:175px;border:0;border-radius:50%;background:var(--ink,#1c1d20);color:var(--paper,#fff);display:inline-flex;align-items:center;justify-content:center;text-align:center;font-size:16px;line-height:1.55;position:relative;isolation:isolate;overflow:hidden;cursor:pointer}.ds-round::before{content:\"\";position:absolute;left:-5%;bottom:-110%;width:110%;height:110%;border-radius:50%;background:var(--blue,#455ce9);z-index:-1;transition:bottom .65s var(--ease,cubic-bezier(.22,1,.36,1)),border-radius .65s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-round:hover::before{bottom:-5%;border-radius:30% 30% 0 0}.ds-round:focus-visible{outline:2px solid var(--blue,#455ce9);outline-offset:7px}.ds-round small{font-size:12px}@media(prefers-reduced-motion:reduce){.ds-round::before{transition:none}}.ds-blue{background:var(--blue,#455ce9)}.ds-blue::before{background:#3346bf}"
+    },
+    {
+      "name": "Outlined pill",
+      "kind": "button",
+      "refersTo": "button-pill",
+      "description": "An outlined route or source action with a blue rising fill.",
+      "html": "<button class=\"ds-pill\"><span>全部活动 <sup>17</sup></span></button>",
+      "css": ".ds-pill{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;position:relative;isolation:isolate;overflow:hidden;background:transparent;color:var(--ink,#1c1d20);border:1px solid var(--line,#d8d9db);min-height:70px;padding:20px 36px;border-radius:50px;font-size:16px;line-height:1.5;cursor:pointer;transition:color .35s,border-color .35s}.ds-pill::before{content:\"\";position:absolute;left:-5%;bottom:-110%;width:110%;height:110%;border-radius:50%;background:var(--blue,#455ce9);z-index:-1;transition:bottom .65s var(--ease,cubic-bezier(.22,1,.36,1)),border-radius .65s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-pill:hover{color:#fff;border-color:var(--blue,#455ce9)}.ds-pill:hover::before{bottom:-5%;border-radius:30% 30% 0 0}.ds-pill:focus-visible{outline:2px solid var(--blue,#455ce9);outline-offset:7px}.ds-pill sup{font-size:.62em;margin-left:.25em}@media(prefers-reduced-motion:reduce){.ds-pill,.ds-pill::before{transition:none}}"
+    },
+    {
+      "name": "Category filter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "An outlined category and its selected charcoal state.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-filter\" aria-pressed=\"true\">全部 <sup>17</sup></button><button class=\"ds-filter\" aria-pressed=\"false\">手作</button></div>",
+      "css": ".ds-filters{display:flex;gap:10px;flex-wrap:wrap}.ds-filter{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;border:1px solid var(--line,#d8d9db);border-radius:40px;padding:14px 24px;min-height:52px;font-size:14px;background:transparent;color:var(--ink,#1c1d20);cursor:pointer;transition:background .3s,color .3s}.ds-filter[aria-pressed=true],.ds-filter:hover{background:var(--ink,#1c1d20);color:#fff;border-color:var(--ink,#1c1d20)}.ds-filter:focus-visible{outline:2px solid var(--blue,#455ce9);outline-offset:7px}@media(hover:none){.ds-filter:hover:not([aria-pressed=true]){background:transparent;color:var(--ink,#1c1d20);border-color:var(--line,#d8d9db)}}@media(prefers-reduced-motion:reduce){.ds-filter{transition:none}}"
+    },
+    {
+      "name": "Underlined note search",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "A visible label and a blue focus rule on an otherwise open field.",
+      "html": "<label class=\"ds-search-label\" for=\"ds-note-search\">找一篇笔记</label><div class=\"ds-search\"><input id=\"ds-note-search\" type=\"search\" placeholder=\"搜索活动、地点或关键词\"></div>",
+      "css": ".ds-search-label{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;font-size:14px;color:var(--ink,#1c1d20)}.ds-search{display:flex;border-bottom:1px solid var(--ink,#1c1d20);padding:18px 0;margin-top:8px;max-width:550px}.ds-search input{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;border:0;background:none;color:var(--ink,#1c1d20);width:100%;min-width:0;font-size:20px;border-radius:0;caret-color:var(--blue,#455ce9)}.ds-search input::placeholder{color:var(--muted,#606267);opacity:1}.ds-search input:focus{outline:none}.ds-search:focus-within{border-bottom:2px solid var(--blue,#455ce9)}"
+    },
+    {
+      "name": "Header navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Bilingual text links with small circular hover markers.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"主导航\"><a href=\"#work\">活动 Works</a><a href=\"#about\">关于 About</a><a href=\"#contact\">联系 Contact</a></nav>",
+      "css": ".ds-nav{display:flex;gap:36px;flex-wrap:wrap}.ds-nav a{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;color:var(--ink,#1c1d20);position:relative;padding:12px 0;font-size:16px;text-decoration:none}.ds-nav a::after{content:\"\";position:absolute;bottom:-2px;left:50%;width:5px;height:5px;background:currentColor;border-radius:50%;transform:scale(0);transition:transform .3s}.ds-nav a:hover::after{transform:scale(1)}.ds-nav a:focus-visible{outline:2px solid var(--blue,#455ce9);outline-offset:7px}@media(prefers-reduced-motion:reduce){.ds-nav a::after{transition:none}}"
+    },
+    {
+      "name": "Activity row",
+      "kind": "card",
+      "refersTo": "work-row",
+      "description": "A large flat activity title with hairlines and restrained metadata.",
+      "html": "<a class=\"ds-work-row\" href=\"#project/flower\"><h3>串珠小花</h3><span class=\"ds-work-meta\">手作<small>beaded flowers</small></span></a>",
+      "css": ".ds-work-row{font-family:'Albert Sans', 'ROUND Sans SC', sans-serif;font-weight:400;color:var(--ink,#1c1d20);border-top:1px solid var(--line,#d8d9db);border-bottom:1px solid var(--line,#d8d9db);display:flex;align-items:center;gap:32px;padding:55px 8vw;min-height:165px;text-decoration:none;transition:color .3s}.ds-work-row h3{font-size:clamp(36px,4.6vw,70px);font-weight:400;line-height:1.25;letter-spacing:-.03em;margin:0;flex:1;transition:transform .6s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-work-meta{display:flex;flex-direction:column;font-size:14px;line-height:1.8;transition:transform .6s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-work-meta small{font-size:12px;color:var(--muted,#606267)}.ds-work-row:hover{color:#919296}.ds-work-row:hover h3{transform:translateX(-20px)}.ds-work-row:hover .ds-work-meta{transform:translateX(20px)}.ds-work-row:focus-visible{outline:2px solid var(--blue,#455ce9);outline-offset:7px}@media(max-width:400px){.ds-work-row{padding:25px 0;flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){.ds-work-row,.ds-work-row h3,.ds-work-meta{transition:none;transform:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "让生活，围成一圈。",
+    "overview": "ROUND’s visual world places real encounters inside a spacious portfolio frame: white reading surfaces, charcoal invitations, oversized regular-weight type and blue circular actions. The user-selected Dennis Snellenberg reference supplies the visual and interaction language; ROUND’s original photographs, identity and activity material supply its content.\n\nThe system feels open, photographic and gently elastic. Circles appear as actions, portraits, menu controls and navigation marks; rectangular images and hairline divisions keep the surrounding material quiet. Motion connects these forms through a moving wordmark, curved transitions and restrained pointer feedback.",
+    "keyCharacteristics": [
+      "Authentic activity photography with generous surrounding space.",
+      "Regular-weight Albert Sans paired with the locally hosted ROUND Sans SC Chinese face.",
+      "Flat white and charcoal surfaces, with blue reserved for interaction.",
+      "Circular actions, pill outlines, rectangular image fields and hairline rows.",
+      "Responsive layouts with explicit touch controls and reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Action Rule",
+        "body": "Use blue for interactive emphasis: action discs, hover fills, selection and focus. Preserve neutral reading surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Open Type Rule",
+        "body": "Build hierarchy through scale and space while retaining regular weight. Give Chinese prose its observed generous line height.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Use contrast, hairlines, photography and overlapping shapes for depth; the implemented system has no box shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the original ROUND photographs and preserve their source context.",
+      "Do retain regular-weight Albert Sans and the locally hosted ROUND Sans SC Chinese face.",
+      "Do pair circular actions with open, flat reading surfaces and hairline divisions.",
+      "Do keep the mobile image and action visible without requiring hover.",
+      "Do preserve visible keyboard focus, meaningful button labels, menu focus containment and photo-viewer keyboard controls.",
+      "Do respect reduced motion and the explicit motion pause control."
+    ],
+    "donts": [
+      "Don’t import the reference creator’s identity, portrait or project content into ROUND.",
+      "Don’t turn archival activity information into invented live booking promises.",
+      "Don’t replace the photographic portfolio with an inherited scrapbook composition.",
+      "Don’t add shadows or rounded card shells to the existing flat image-and-rule patterns.",
+      "Don’t make cursor-following previews the only way to see an activity."
+    ]
+  }
+}

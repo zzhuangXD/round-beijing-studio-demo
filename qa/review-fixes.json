@@ -1,0 +1,29 @@
+[
+  {
+    "width": 1440,
+    "overflow": false,
+    "cssFont": "\"Albert Sans\", \"ROUND Sans SC\", sans-serif",
+    "fontLoaded": true
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "cssFont": "\"Albert Sans\", \"ROUND Sans SC\", sans-serif",
+    "fontLoaded": true
+  },
+  {
+    "width": 320,
+    "overflow": false,
+    "cssFont": "\"Albert Sans\", \"ROUND Sans SC\", sans-serif",
+    "fontLoaded": true
+  },
+  {
+    "skipHash": "#home",
+    "skipFocus": "main",
+    "hero": true
+  },
+  {
+    "sameRouteHomeY": 0,
+    "hash": "#home"
+  }
+]
