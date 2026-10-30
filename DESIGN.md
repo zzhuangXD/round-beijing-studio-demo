@@ -227,3 +227,7 @@ Reduced motion removes animation, transitions, magnetic movement, cursor preview
 - **Don’t** replace the photographic portfolio with an inherited scrapbook composition.
 - **Don’t** add shadows or rounded card shells to the existing flat image-and-rule patterns.
 - **Don’t** make cursor-following previews the only way to see an activity.
+
+### Activity preview sizing
+
+The desktop cursor-following image scales with the viewport: `min(clamp(480px,36vw,1080px),70vh,calc(100vw - 48px))`, with a 9:10 frame. Its image inset scales from 16px to 32px. The pointer position is constrained using the actual frame size plus a 16px edge allowance. On touch devices, activity photographs remain inline.

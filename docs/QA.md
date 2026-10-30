@@ -34,3 +34,7 @@ Published and browser-verified on 2026-10-30:
 - Local visual evidence is retained in `.impeccable/review/`, including `live-desktop.png`, `live-mobile.png` and `live-user-320.png`. Screenshot binaries are intentionally excluded from the source repository.
 
 Only the new repository is changed; the original ROUND demo remains untouched.
+
+## Enlarged activity preview
+
+Following the user’s screenshot feedback, the fixed 360px preview now scales with the screen. Local ego lite checks cover 1440 × 1000 (518px preview), 3600 × 1440 (1008px preview), and the unchanged 390px inline-photo layout. Preview frames stay within the viewport; the build and local media validation pass.
